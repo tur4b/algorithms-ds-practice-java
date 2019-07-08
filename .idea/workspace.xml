@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50b49c8d-d962-4df2-a3e0-60e38635b61b" name="Default Changelist" comment="Revert &quot;simple-data_structures-and-algorithms&quot;&#10;&#10;This reverts commit 469ccf19">
+      <change afterPath="$PROJECT_DIR$/src/com/problem/recursion/simple/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/problem/recursion/simple/MathCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm-ds-practice-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms-ds-practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/LinkedListDoubleEnded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/LinkedListDoubleEnded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/LinkedListDoubly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/LinkedListDoubly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/max_subarray_sum/MaxSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/max_subarray_sum/MaxSubArraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/queue/queue_array_impl/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/queue/queue_array_impl/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/QueueLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/QueueLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/recursion/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/recursion/simple/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/recursion/SimplePythogorianTriangleRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/recursion/simple/SimplePythogorianTriangleRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/search/binary/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/search/binary/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/sorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/sorting/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/stack/delimiter_match/DelimiterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/stack/delimiter_match/DelimiterChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/problem/stack/stack_linkedList_impl/StackLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/problem/stack/stack_linkedList_impl/StackLinkedList.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/BubbleSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="method#BubbleSort#0;class#BubbleSort#0" />
+                <element signature="method#swap#0;class#BubbleSort#0" />
+                <element signature="method#bubbleSortAsc#0;class#BubbleSort#0" />
+                <element signature="method#bubbleSortDesc#0;class#BubbleSort#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/stack/delimiter_match/DelimiterChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding>
+                <element signature="method#DelimiterChecker#0;class#DelimiterChecker#0" />
+                <element signature="method#checkIfMatch#0;class#DelimiterChecker#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/stack/delimiter_match/StackDelimiter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-332">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/stack/stack_array_impl/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/LinkedListDoubleEnded.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="method#LinkedListDoubleEnded#0;class#LinkedListDoubleEnded#0" />
+                <element signature="method#insertFirst#0;class#LinkedListDoubleEnded#0" />
+                <element signature="method#insertLast#0;class#LinkedListDoubleEnded#0" />
+                <element signature="method#deleteFirst#0;class#LinkedListDoubleEnded#0" />
+                <element signature="method#deleteLast#0;class#LinkedListDoubleEnded#0" />
+                <element signature="method#show#0;class#LinkedListDoubleEnded#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/bank/BankAccount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/Fibonacci.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/MathCustom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/SimplePythogorianTriangleRec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Turab" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="first" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/problem/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/implementations/AccountCode.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/BankAccount.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/specification/BankSpecification.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/Director.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/Contact.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/Person.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/PhoneNumber.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/implementations/Card.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/About.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/implementations/StandardBankAccount.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/implementations/Authentication.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/Stack.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/StackLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/stackLinkedList/StackLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queueLinkedList/QueueLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queueLinkedList/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/delimiter_match/StackDelimiter.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/stackLinkedList/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/stack_array_impl/Stack.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queue_circular/QueueCircular.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/BubbleSort.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/search/binary/BinarySearchSQRT.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/QueueLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/LinkedListDoubleEnded.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/max_subarray_sum/MaxSubArraySum.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/Factorial.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/SimplePythogorianTriangleRec.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/delimiter_match/DelimiterChecker.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/stack/stack_linkedList_impl/StackLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/bank/models/Licensed.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/LinkedListDoubly.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/simple/Multiply.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/simple/MathCustom.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/search/binary/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/simple/SimplePythogorianTriangleRec.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/recursion/simple/Fibonacci.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/queue/queue_array_impl/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/problem/sorting/QuickSort.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list_double_ended" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list_doubly" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list" type="462c0819:PsiDirectoryNode" />
+              <item name="linked_list_simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="max_subarray_sum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="queue_array_impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="queue_circular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="recursion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="recursion" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="sorting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="delimiter_match" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm-ds-practice-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm-ds-practice-1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="problem" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="stack_array_impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562607388126" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.problem.bank.implementations" />
+      <recent name="com.problem.bank.models" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.problem.Main" />
+      <module name="algorithms-ds-practice" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50b49c8d-d962-4df2-a3e0-60e38635b61b" name="Default Changelist" comment="" />
+      <created>1548158350443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548158350443</updated>
+      <workItem from="1548158353491" duration="15875000" />
+      <workItem from="1548688667445" duration="601000" />
+      <workItem from="1550259497896" duration="712000" />
+      <workItem from="1553023687912" duration="2201000" />
+      <workItem from="1553160839362" duration="827000" />
+      <workItem from="1553272245345" duration="1894000" />
+      <workItem from="1553275203669" duration="240000" />
+      <workItem from="1553333765365" duration="1830000" />
+      <workItem from="1553436150144" duration="10040000" />
+      <workItem from="1553536835235" duration="5942000" />
+      <workItem from="1553714342690" duration="7245000" />
+      <workItem from="1553752841253" duration="4250000" />
+      <workItem from="1554186836526" duration="2564000" />
+      <workItem from="1554223723680" duration="42000" />
+      <workItem from="1554229734063" duration="916000" />
+      <workItem from="1554621642439" duration="8686000" />
+      <workItem from="1554792415587" duration="3906000" />
+      <workItem from="1554824743191" duration="5864000" />
+      <workItem from="1554907333367" duration="4906000" />
+      <workItem from="1555184269812" duration="93000" />
+      <workItem from="1555762152154" duration="162000" />
+      <workItem from="1562590904989" duration="1733000" />
+    </task>
+    <task id="LOCAL-00001" summary="simple-data_structures-and-algorithms">
+      <created>1554630974899</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554630974899</updated>
+    </task>
+    <task id="LOCAL-00002" summary="simple-data_structures-and-algorithms">
+      <created>1554631049320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554631049320</updated>
+    </task>
+    <task id="LOCAL-00003" summary="simple-data_structures-and-algorithms">
+      <created>1554631193397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554631193397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="simple-data_structures-and-algorithms">
+      <created>1554631276600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554631276600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="simple-data_structures-and-algorithms">
+      <created>1554831527107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1554831527107</updated>
+    </task>
+    <task id="LOCAL-00006" summary="simple-data_structures-and-algorithms">
+      <created>1554831661542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554831661542</updated>
+    </task>
+    <task id="LOCAL-00007" summary="simple-data_structures-and-algorithms">
+      <created>1554832153043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554832153058</updated>
+    </task>
+    <task id="LOCAL-00008" summary="simple-data_structures-and-algorithms">
+      <created>1554833213197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554833213197</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Revert &quot;simple-data_structures-and-algorithms&quot;&#10;&#10;This reverts commit 469ccf19">
+      <created>1554833712825</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554833712825</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="80529000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13892618" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32577905" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49798658" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50201344" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="simple-data_structures-and-algorithms" />
+    <MESSAGE value="Revert &quot;simple-data_structures-and-algorithms&quot;&#10;&#10;This reverts commit 469ccf19" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;simple-data_structures-and-algorithms&quot;&#10;&#10;This reverts commit 469ccf19" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms-ds-practice.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/StackLinkedList.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/stack_linkedList_impl/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/PhoneNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/About.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/specification/BankSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/search/binary/BinarySearchSQRT.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/CountingSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="530" column="30" selection-start-line="530" selection-start-column="30" selection-end-line="530" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/stack_linkedList_impl/StackLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/Director.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/Licensed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/LinkedListDoubly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="method#Node#0;class#Node#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="203" column="22" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
+          <folding>
+            <element signature="method#LinkedList#0;class#LinkedList#0" />
+            <element signature="method#insertFirst#0;class#LinkedList#0" />
+            <element signature="method#deleteFirst#0;class#LinkedList#0" />
+            <element signature="method#deleteTarget#0;class#LinkedList#0" />
+            <element signature="method#insertAfter#0;class#LinkedList#0" />
+            <element signature="method#insertLast#0;class#LinkedList#0" />
+            <element signature="method#deleteLast#0;class#LinkedList#0" />
+            <element signature="method#search#0;class#LinkedList#0" />
+            <element signature="method#show#0;class#LinkedList#0" />
+            <element signature="method#reverse#0;class#LinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/implementations/AccountCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/search/binary/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="method#binarySearch#0;class#BinarySearch#0" />
+            <element signature="method#binarySearch_Recursion#0;class#BinarySearch#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_doubly/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/implementations/StandardBankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2420">
+          <caret line="132" column="28" selection-start-line="132" selection-start-column="28" selection-end-line="132" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#2446#2447#0" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#3600#3601#0" expanded="true" />
+            <element signature="e#3640#3641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/implementations/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
+          <folding>
+            <element signature="method#doSomeBankWork#0;class#Main#0" />
+            <element signature="method#stackDelimiterCheck#0;class#Main#0" />
+            <element signature="method#getString#0;class#Main#0" />
+            <element signature="method#stacckDelimiterFunction#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/queue/queue_linkedList_impl/QueueLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+          <folding>
+            <element signature="method#QueueLinkedList#0;class#QueueLinkedList#0" />
+            <element signature="method#enqueue#0;class#QueueLinkedList#0" />
+            <element signature="method#dequeue#0;class#QueueLinkedList#0" />
+            <element signature="method#show#0;class#QueueLinkedList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_simple/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/implementations/Authentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/max_subarray_sum/MaxSubArraySum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="method#max_subarray_sum_brute_force#0;class#MaxSubArraySum#0" />
+            <element signature="method#max_subarray_sum_kadane#0;class#MaxSubArraySum#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/queue/queue_array_impl/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="method#Queue#0;class#Queue#0" />
+            <element signature="method#enqueue#0;class#Queue#0" />
+            <element signature="method#dequeue#0;class#Queue#0" />
+            <element signature="method#show#0;class#Queue#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/queue/queue_circular/QueueCircular.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="method#QueueCircular#0;class#QueueCircular#0" />
+            <element signature="method#enqueue#0;class#QueueCircular#0" />
+            <element signature="method#dequeue#0;class#QueueCircular#0" />
+            <element signature="method#show#0;class#QueueCircular#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="method#factorialForLoop#0;class#Factorial#0" />
+            <element signature="method#factorialRecursionSlow#0;class#Factorial#0" />
+            <element signature="method#factorialRecursionFast#0;class#Factorial#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/Fibonacci.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/MathCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/recursion/simple/SimplePythogorianTriangleRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="method#SelectionSort#0;class#SelectionSort#0" />
+            <element signature="e#384#740#1" />
+            <element signature="method#selectionSortDesc#0;class#SelectionSort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="method#InsertionSort#0;class#InsertionSort#0" />
+            <element signature="method#sortArrOrderAsc#0;class#InsertionSort#0" />
+            <element signature="method#sortArrOrderDesc#0;class#InsertionSort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/sorting/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="method#BubbleSort#0;class#BubbleSort#0" />
+            <element signature="method#swap#0;class#BubbleSort#0" />
+            <element signature="method#bubbleSortAsc#0;class#BubbleSort#0" />
+            <element signature="method#bubbleSortDesc#0;class#BubbleSort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/delimiter_match/DelimiterChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="method#DelimiterChecker#0;class#DelimiterChecker#0" />
+            <element signature="method#checkIfMatch#0;class#DelimiterChecker#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/delimiter_match/StackDelimiter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/stack/stack_array_impl/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/linked_list/linked_list_double_ended/LinkedListDoubleEnded.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="method#LinkedListDoubleEnded#0;class#LinkedListDoubleEnded#0" />
+            <element signature="method#insertFirst#0;class#LinkedListDoubleEnded#0" />
+            <element signature="method#insertLast#0;class#LinkedListDoubleEnded#0" />
+            <element signature="method#deleteFirst#0;class#LinkedListDoubleEnded#0" />
+            <element signature="method#deleteLast#0;class#LinkedListDoubleEnded#0" />
+            <element signature="method#show#0;class#LinkedListDoubleEnded#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/problem/bank/models/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javaFX-11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>algorithm-ds-practice-1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
