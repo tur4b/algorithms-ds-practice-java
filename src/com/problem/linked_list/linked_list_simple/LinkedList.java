@@ -16,115 +16,139 @@ public class LinkedList<T> {
         return head == null?true:false;
     }
 
+    // TODO: implemented just for data which implements Comparable interface
     ////it is more optimal than insertion sort - O(n*n)
     //insert the nodes with ascending order - like: 1->2->3->7->15->.....
-    public void insertInSortedOrderAsc(T data){
+    public Node<T> insertInSortedOrderAsc(T data){
         //let's create new node with given "data" [data|next] ->
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
-            insertFirst(data); return;
+            return insertFirst(data); 
         }
 
-        Node current = head;
-        Node previous = null;
+        Node<T> current = head;
+        Node<T> previous = null;
         //for comparision we need to cast it to long - we can also use some techniques for other data types
-        while(current != null && Long.parseLong(current.getData().toString()) <= Long.parseLong(data.toString())){
+        while(current != null && ((Comparable) current.getData()).compareTo(data) <= 0){
             previous = current;
             current = current.getNext();
         }
 
         //if new node's data less than head's data
         if(previous == null){
-            insertFirst(data);return;
+            return insertFirst(data);
         }
 
         //add new node
         previous.setNext(node);
         node.setNext(current);
         size++;
+        return node;
     }
 
+    // TODO: implemented just for data which implements Comparable interface
     //insert new nodes in descending order - it is more optimal than insertion sort - O(n*n)
-    public void insertInSortedOrderDesc(T data){
+    public Node<T> insertInSortedOrderDesc(T data){
+        if(!(data instanceof Comparable)) {
+            throw new IllegalArgumentException("requires Comparable obj to compare inserted values");
+        }
         //let's create new node with given "data" [data|next] ->
         Node<T> node = new Node<T>(data);
+
         if(isEmpty()){
-            insertFirst(data); return;
+            return insertFirst(data);
         }
 
-        Node current = head;
-        Node previous = null;
+        Node<T> current = head;
+        Node<T> previous = null;
         //for comparision we need to cast it to long - we can also use some techniques for other data types
-        while(current != null && Long.parseLong(current.getData().toString()) >= Long.parseLong(data.toString())){
+        while(current != null && ((Comparable) current.getData()).compareTo(data) >= 0){
             previous = current;
             current = current.getNext();
         }
 
         //if new node's data less than head's data
         if(previous == null){
-            insertFirst(data);return;
+            return insertFirst(data);
         }
 
         //add new node
         previous.setNext(node);
         node.setNext(current);
         size++;
+        return node;
     }
 
     //correct
-    public void insertFirst(T data){
+    public Node<T> insertFirst(T data){
         Node<T> node = new Node<>(data);
         if(isEmpty()){
             head = node;
-            size++; return;
+            size++; 
         }
-        node.setNext(head);
-        head = node;
-        size++; return;
+        else {
+            node.setNext(head);
+            head = node;
+            size++;
+        } 
+        return node;
     }
 
     //correct
-    public void deleteFirst(){
-        if(isEmpty()) return;
-        Node current = head;
+    public Node<T> deleteFirst(){
+        if(isEmpty()) {
+            return null;
+        }
+        Node<T> current = head;
         head = head.getNext();
         size--;
-        System.out.println("Deleted Node: " + current.getData());
+        return current;
     }
 
     //correct
-    public void deleteTarget(T data){
+    public Node<T> deleteTarget(T data){
         if(isEmpty()){
-            System.out.println("Empty!");return;
+            return null;
         }
         //if target is first element
         if(head.getData() == data) {
             deleteFirst();
-            return;
+            return head;
         }
 
-        Node current = head;
-        Node previous = head;
+        return deleteTarget_(data);
+    }
+
+    private Node<T> deleteTarget_(T data) {
+        Node<T> current = head;
+        Node<T> previous = head;
 
         while(current != null){
             previous = current;
             current = current.getNext();
-            if(current.getData() == data)  break;
+            if(current.getData() == data) {
+                break;
+            }
         }
         previous.setNext(current.getNext());
         size--;
-        System.out.println("Deleted Node: " + current.getData());
+        return current;
     }
 
     //correct
-    public void insertAfter(T target, T data){
+    public Node<T> insertAfter(T target, T data){
         boolean found = false;
         if(isEmpty()){
             System.out.println(data + " not found for insertion!");
-            return;
+            return null;
         }
-        Node node = new Node(data);
-        Node current = head;
+        return insertAfter_(target, data, found);
+    }
+
+    private Node<T> insertAfter_(T target, T data, boolean found) {
+        Node<T> node = new Node<>(data);
+        Node<T> current = head;
+
         while(current != null){
             if(current.getData() == target) {
                 found = true;
@@ -138,33 +162,38 @@ public class LinkedList<T> {
             current.setNext(node);
             size++;
         }
-
+        return node;
     }
 
     //correct
-    public void insertLast(T data){
-        Node node = new Node(data);
+    public Node<T> insertLast(T data){
+        Node<T> node = new Node<>(data);
         if(isEmpty()){
-            insertFirst(data);return;
+            return insertFirst(data);
         }
-        Node current = head;
+        Node<T> current = head;
         while(current.getNext()!= null){
             current = current.getNext();
         }
         current.setNext(node);
         size++;
+        return node;
     }
 
     //correct
-    public void deleteLast(){
-        Node current = head;
-        Node previous = head;
-        if(isEmpty()) return;
+    public Node<T> deleteLast(){
+        Node<T> current = head;
+        Node<T> previous = head;
+        if(isEmpty()) {
+            return null;
+        }
 
+        return deleteLast_(current, previous);
+    }
+
+    private Node<T> deleteLast_(Node<T> current, Node<T> previous) {
         if(size == 1){
-            deleteFirst();
-            System.out.println("Empty");
-            return;
+            return deleteFirst();
         }
         while(current.getNext() != null){
             previous = current;
@@ -172,42 +201,50 @@ public class LinkedList<T> {
         }
         previous.setNext(null);
         size--;
-        System.out.println("Deleted Node: " + current.getData());
+        return current;
     }
 
     //correct
     public boolean search(T data){
         if(isEmpty()) return false;
-        Node current = head;
+        Node<T> current = head;
         while(current != null){
-            if(current.getData() == data) return true;
+            if(current.getData() == data) {
+                return true;
+            }
             current = current.getNext();
         }
         return false;
     }
 
-    private void displayNode(Node node){
-        System.out.print(node.getData() + "->");
+    private void displayNode(Node<T> node){
+        String printedText = node.getData().toString();
+        if(node.getNext() != null) {
+            printedText += "->";
+        }
+        System.out.print(printedText);
     }
 
     //correct
     public void show(){
-        if(isEmpty()) return;
-        Node current = head;
+        if(isEmpty()) {
+            return;
+        }
+        Node<T> current = head;
         while(current != null){
             displayNode(current);
             current = current.getNext();
         }
-        System.out.println();
     }
 
     //reverse the list
     public void reverse(){
         if(isEmpty()){
-            System.out.println("List is Empty!"); return;
+            System.out.println("List is Empty!"); 
+            return;
         }
-        Node current = head;
-        Node previous = null;
+        Node<T> current = head;
+        Node<T> previous = null;
 
         while(current != null){
             current = current.getNext();
@@ -221,4 +258,5 @@ public class LinkedList<T> {
     public int size(){
         return this.size;
     }
+
 }

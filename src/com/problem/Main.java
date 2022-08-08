@@ -1,16 +1,11 @@
 package com.problem;
 
-import com.problem.bank.implementations.Card;
-import com.problem.bank.implementations.StandardBankAccount;
-import com.problem.bank.models.*;
-import com.problem.bank.specification.BankSpecification;
 import com.problem.linked_list.linked_list_simple.LinkedList;
 import com.problem.stack.delimiter_match.DelimiterChecker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
 
 public class Main {
 
@@ -51,6 +46,19 @@ public class Main {
         }while(answer);
     }
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        System.out.println("salam");
+
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insertInSortedOrderAsc(5);
+        list.insertInSortedOrderAsc(2);
+        list.insertInSortedOrderAsc(1);
+        list.insertInSortedOrderAsc(4);
+        list.insertInSortedOrderAsc(3);
+        list.insertInSortedOrderAsc(7);
+
+        list.show();
+
+    }
 
 }
