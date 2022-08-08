@@ -1,4 +1,5 @@
 package com.problem.linked_list.linked_list_double_ended;
+import com.problem.linked_list.model.Node;
 
 //double-ended linked list completed
 public class LinkedListDoubleEnded<T> {
@@ -19,62 +20,76 @@ public class LinkedListDoubleEnded<T> {
     }
 
     //insert first - O(1)
-    public void insertFirst(T data){
+    public Node<T> insertFirst(T data){
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
             head = node;
             last = node;
-            return;
         }
-        node.setNext(head);
-        head = node;
+        else {
+            node.setNext(head);
+            head = node;
+        }
+        return node;
     }
 
     //insertLast - O(1)
-    public void insertLast(T data){
+    public Node<T> insertLast(T data){
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
-            insertFirst(data); return;
+            return insertFirst(data);
         }
         previous = last;
         last.setNext(node);
         last = node;
+        return node;
     }
 
     //deleteFirst - O(1)
-    public void deleteFirst(){
+    public Node<T> deleteFirst(){
         if(isEmpty()){
-            System.out.println("List is Empty!"); return;
+            System.out.println("List is Empty!"); 
+            return null;
         }
+        Node<T> removedNode = head;
         head = head.getNext();
+        // removedNode.setNext(null);
+        return removedNode;
     }
 
     //deleteLast - O(1) time if we save previous
     //otherwise we need to traverse to get the node that is previous of last
-    public void deleteLast(){
+    public Node<T> deleteLast(){
         if(isEmpty()){
-            System.out.println("List is Empty!"); return;
+            System.out.println("List is Empty!"); 
+            return null;
         }
+        Node<T> removedNode = last;
         previous.setNext(null);
         last = previous;
+        return removedNode;
     }
     
     //show node data
-    private T showNodeData(Node<T> node){
-        return node.getData();
+    private String showNodeData(Node<T> node){
+        String printedText = node.getData().toString();
+        if(node.getNext() != null) {
+            printedText += "->";
+        }
+        return printedText;
     }
 
     //show list nodes
     public void show(){
         if(isEmpty()){
-            System.out.println("List is Empty!"); return;
+            System.out.println("List is Empty!"); 
+            return;
         }
         Node<T> current = head;
         while(current != null){
-            System.out.print(showNodeData(current) + "->");
+            System.out.print(showNodeData(current));
             current = current.getNext();
         }
-        System.out.println();
     }
 
 }

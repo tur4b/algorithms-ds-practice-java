@@ -1,4 +1,5 @@
 package com.problem.linked_list.linked_list_doubly;
+import com.problem.linked_list.model.Node;
 
 //doubly linked list completed
 public class LinkedListDoubly<T> {
@@ -15,93 +16,104 @@ public class LinkedListDoubly<T> {
 
     //check if isEmpty
     private boolean isEmpty(){
-        return head == null ? true: false;
+        return head == null;
     }
 
     //insertFirst - O(1) time
-    public void insertFirst(T data){
+    public Node<T> insertFirst(T data){
         Node<T> node = new Node<T>(data);
         if(isEmpty()) {
-            head = node;
-            last = node;
+            last = head = node;
             ++size;
-            return;
         }
-        node.setNext(head);
-        head.setPrevious(node);
-        head = node;
-        ++size;
+        else {
+            node.setNext(head);
+            head.setPrevious(node);
+            head = node;
+            ++size;
+        }
+        return node;
     }
 
     //insertLast - O(1)
-    public void insertLast(T data){
+    public Node<T> insertLast(T data){
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
-            insertFirst(data); return;
+            return insertFirst(data);
         }
         last.setNext(node);
         node.setPrevious(last);
         last = node;
         ++size;
+        return node;
     }
 
     //deleteFirst - O(1)
-    public void deleteFirst(){
+    public Node<T> deleteFirst(){
         if(isEmpty()){
             System.out.println("List is Empty!");
-            return;
+            return null;
         }
+        Node<T> removedNode = head;
         head = head.getNext();
         head.setPrevious(null);
         size--;
+        return removedNode;
     }
 
     //deleteLast - O(1)
-    public void deleteLast(){
+    public Node<T> deleteLast(){
         if(isEmpty()){
-            System.out.println("List is Empty!");return;
+            System.out.println("List is Empty!");
+            return null;
         }
+        Node<T> removedNode = last;
         last.getPrevious().setNext(null);
         last = last.getPrevious();
         size--;
+        return removedNode;
     }
 
     //delete target
-    public void deleteTarget(T traget){
+    public Node<T> deleteTarget(T traget){
         if(isEmpty()){
-            System.out.println("List is Empty!"); return;
+            System.out.println("List is Empty!"); 
+            return null;
         }
         if(head.getData() == traget){
-            deleteFirst(); return;
+            return deleteFirst();
         }
         if(last.getData() == traget){
-            deleteLast(); return;
+            return deleteLast();
         }
-        Node current = head;
+        Node<T> current = head;
         while(current != null && current.getData() != traget){
             current = current.getNext();
         }
+        Node<T> removeNode = current;
         current.getPrevious().setNext(current.getNext());
         current.getNext().setPrevious(current.getPrevious());
         size--;
+        return removeNode;
     }
 
     //insert at index - list's index starts from zero
-    public void insertAtIndex(long index, T data){
+    public Node<T> insertAtIndex(long index, T data){
         Node<T> node = new Node<>(data);
         if(isEmpty() || getSize() < index || index < 0){
-            System.out.println("Given index is not present!"); return;
+            System.out.println("Given index is not present!");
+            return null;
         }
         //if index == 0 insert it to the head
         if(index == 0){
-            insertFirst(data); return;
+            return insertFirst(data);
         }
         //if index == size insert it to the tail
         if(index == getSize()){
-            insertLast(data); return;
+            return insertLast(data);
         }
         //otherwise
-        Node current = head;
+        Node<T> current = head;
         while(current != null && index-- > 0){
             current = current.getNext();
         }
@@ -111,40 +123,38 @@ public class LinkedListDoubly<T> {
         node.setPrevious(current.getPrevious());
         current.setPrevious(node);
         ++size;
+        return node;
     }
 
     //delete at index - list's index starts from zero
-    public void deleteAtIndex(long index){
+    public Node<T> deleteAtIndex(long index){
         long theSize = getSize();
         if(isEmpty() || theSize <= index || index < 0){
-            System.out.println("Given index is not present!"); return;
+            System.out.println("Given index is not present!");
+            return null;
         }
         //if it is first element
         if(index == 0){
-            deleteFirst();return;
+            return deleteFirst();
         }
         //if it is last element
         if(index == theSize - 1){
-            deleteLast(); return;
+            return deleteLast();
         }
-        Node current = head;
+        Node<T> current = head;
         while(current != null && index-- > 0){
             current = current.getNext();
         }
+        Node<T> removeNode = current;
         current.getPrevious().setNext(current.getNext());
         current.getNext().setPrevious(current.getPrevious());
         size--;
-
+        return removeNode;
     }
 
     //get size
     private long getSize(){
         return this.size;
-    }
-
-    //show Node data
-    private T showNodeData(Node<T> node){
-        return node.getData();
     }
 
     //show list nodes from head - 1->2->3->
@@ -153,12 +163,19 @@ public class LinkedListDoubly<T> {
             System.out.print("List is Empty!\n"); return;
         }
         System.out.println("Show Form Head: ");
-        Node current = head;
+        Node<T> current = head;
         while(current != null){
-            System.out.print(showNodeData(current) + "->");
+            System.out.print(showNodeData(current));
             current = current.getNext();
         }
-        System.out.println();
+    }
+
+    private String showNodeData(Node<T> node) {
+        String printedText = node.getData().toString();
+        if(node.getNext() != null) {
+            printedText += "<->";
+        }
+        return printedText;
     }
 
     //show list nodes from last - 3->2->1->
@@ -168,12 +185,11 @@ public class LinkedListDoubly<T> {
             return;
         }
         System.out.println("Show Form Last: ");
-        Node current = last;
+        Node<T> current = last;
         while(current != null){
-            System.out.print(showNodeData(current) + "->");
+            System.out.print(showNodeData(current));
             current = current.getPrevious();
         }
-        System.out.println();
     }
 
 }

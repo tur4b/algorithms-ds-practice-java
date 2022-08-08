@@ -1,4 +1,5 @@
 package com.problem.linked_list.linked_list_simple;
+import com.problem.linked_list.model.Node;
 
 //simple linked list completed - we can add some additional methods :)
 public class LinkedList<T> {
@@ -13,13 +14,16 @@ public class LinkedList<T> {
 
     //check if the list is empty or not
     public boolean isEmpty(){
-        return head == null?true:false;
+        return head == null;
     }
 
     // TODO: implemented just for data which implements Comparable interface
     ////it is more optimal than insertion sort - O(n*n)
     //insert the nodes with ascending order - like: 1->2->3->7->15->.....
     public Node<T> insertInSortedOrderAsc(T data){
+        if(!(data instanceof Comparable)) {
+            throw new IllegalArgumentException("requires Comparable obj to compare inserted values");
+        }
         //let's create new node with given "data" [data|next] ->
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
@@ -28,7 +32,6 @@ public class LinkedList<T> {
 
         Node<T> current = head;
         Node<T> previous = null;
-        //for comparision we need to cast it to long - we can also use some techniques for other data types
         while(current != null && ((Comparable) current.getData()).compareTo(data) <= 0){
             previous = current;
             current = current.getNext();
@@ -61,7 +64,6 @@ public class LinkedList<T> {
 
         Node<T> current = head;
         Node<T> previous = null;
-        //for comparision we need to cast it to long - we can also use some techniques for other data types
         while(current != null && ((Comparable) current.getData()).compareTo(data) >= 0){
             previous = current;
             current = current.getNext();
