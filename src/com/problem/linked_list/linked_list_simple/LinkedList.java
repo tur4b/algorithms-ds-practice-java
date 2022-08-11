@@ -1,30 +1,33 @@
 package com.problem.linked_list.linked_list_simple;
+import java.util.Iterator;
+
 import com.problem.linked_list.model.Node;
 
-//simple linked list completed - we can add some additional methods :)
-public class LinkedList<T> {
+public class LinkedList<T> implements Iterable<Node<T>> {
 
     private Node<T> head;
-    private int size;
+    private long size;
 
     public LinkedList() {
         this.head = null;
         this.size = 0;
     }
 
-    //check if the list is empty or not
     public boolean isEmpty(){
         return head == null;
     }
 
-    // TODO: implemented just for data which implements Comparable interface
-    ////it is more optimal than insertion sort - O(n*n)
-    //insert the nodes with ascending order - like: 1->2->3->7->15->.....
+    public boolean isNotEmpty(){
+        return head != null;
+    }
+
+    // implemented just for data which implements Comparable interface
+    // it is more optimal than insertion sort - O(n*n)
+    // insert the nodes with ascending order - like: 1->2->3->7->15->.....
     public Node<T> insertInSortedOrderAsc(T data){
         if(!(data instanceof Comparable)) {
             throw new IllegalArgumentException("requires Comparable obj to compare inserted values");
         }
-        //let's create new node with given "data" [data|next] ->
         Node<T> node = new Node<T>(data);
         if(isEmpty()){
             return insertFirst(data); 
@@ -37,25 +40,23 @@ public class LinkedList<T> {
             current = current.getNext();
         }
 
-        //if new node's data less than head's data
         if(previous == null){
             return insertFirst(data);
         }
 
-        //add new node
         previous.setNext(node);
         node.setNext(current);
         size++;
         return node;
     }
 
-    // TODO: implemented just for data which implements Comparable interface
-    //insert new nodes in descending order - it is more optimal than insertion sort - O(n*n)
+    // implemented just for data which implements Comparable interface
+    // insert new nodes in descending order - it is more optimal than insertion sort - O(n*n)
     public Node<T> insertInSortedOrderDesc(T data){
         if(!(data instanceof Comparable)) {
             throw new IllegalArgumentException("requires Comparable obj to compare inserted values");
         }
-        //let's create new node with given "data" [data|next] ->
+        // let's create new node with given "data" [data|next] ->
         Node<T> node = new Node<T>(data);
 
         if(isEmpty()){
@@ -69,12 +70,10 @@ public class LinkedList<T> {
             current = current.getNext();
         }
 
-        //if new node's data less than head's data
         if(previous == null){
             return insertFirst(data);
         }
 
-        //add new node
         previous.setNext(node);
         node.setNext(current);
         size++;
@@ -112,7 +111,6 @@ public class LinkedList<T> {
         if(isEmpty()){
             return null;
         }
-        //if target is first element
         if(head.getData() == data) {
             deleteFirst();
             return head;
@@ -257,8 +255,33 @@ public class LinkedList<T> {
     }
 
     //size
-    public int size(){
+    public long size(){
         return this.size;
+    }
+
+    @Override
+    public Iterator<Node<T>> iterator() {
+        return new LinkedListIterator();
+    }
+
+    private class LinkedListIterator implements Iterator<Node<T>> {
+
+        private Node<T> iterNode = head;
+
+        @Override
+        public boolean hasNext() {
+            return iterNode != null;
+        }
+
+        @Override
+        public Node<T> next() {
+            Node<T> current = iterNode;
+            if(this.iterNode != null) {
+                this.iterNode = iterNode.getNext();
+            }
+            return current;
+        }
+
     }
 
 }

@@ -38,8 +38,8 @@ public class QueueCircular<T> {
             return;
         }
         if(tail == (size-1)){
-            tail = -1;
-            items[++tail] = data;
+            tail = 0;
+            items[tail] = data;
             currentSize++;
             return;
         }

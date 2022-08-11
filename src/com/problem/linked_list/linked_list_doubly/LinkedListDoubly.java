@@ -1,8 +1,11 @@
 package com.problem.linked_list.linked_list_doubly;
+import java.util.Iterator;
+
+import com.problem.linked_list.linked_list_doubly.model.IteratorType;
 import com.problem.linked_list.model.Node;
 
 //doubly linked list completed
-public class LinkedListDoubly<T> {
+public class LinkedListDoubly<T> implements Iterable<Node<T>> {
 
     private Node<T> head;
     private Node<T> last;
@@ -190,6 +193,58 @@ public class LinkedListDoubly<T> {
             System.out.print(showNodeData(current));
             current = current.getPrevious();
         }
+    }
+
+    @Override
+    public Iterator<Node<T>> iterator() {
+        return new LinkedListFromHeadIterator();
+    }
+
+    public Iterator<Node<T>> iterator(IteratorType type) {
+        return switch(type) {
+            case ITERATE_HEAD -> new LinkedListFromHeadIterator();
+            case ITERATE_TAIL -> new LinkedListFromTailIterator();
+        };
+    }
+
+    private final class LinkedListFromHeadIterator implements Iterator<Node<T>> {
+
+        private Node<T> iterNode = head;
+
+        @Override
+        public boolean hasNext() {
+            return iterNode != null;
+        }
+
+        @Override
+        public Node<T> next() {
+            Node<T> current = iterNode;
+            if(iterNode != null) {
+                iterNode = iterNode.getNext();
+            }
+            return current;
+        }
+
+    }
+
+    private final class LinkedListFromTailIterator implements Iterator<Node<T>> {
+
+        private Node<T> iterNode = last;
+
+        @Override
+        public boolean hasNext() {
+            return iterNode != null;
+        }
+
+        @Override
+        public Node<T> next() {
+            Node<T> current = iterNode;
+            if(iterNode != null) {
+                iterNode = iterNode.getPrevious();
+            }
+            return current;
+        }
+
     }
 
 }

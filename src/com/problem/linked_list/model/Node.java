@@ -1,6 +1,7 @@
 package com.problem.linked_list.model;
 
 public class Node<T> {
+    
     private T data;
     private Node<T> next;
     private Node<T> previous;
