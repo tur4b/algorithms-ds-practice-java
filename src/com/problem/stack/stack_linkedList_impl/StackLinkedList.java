@@ -12,9 +12,9 @@ public class StackLinkedList<T> {
     //simple push function - insert to the head
     public void push(T data){
         System.out.println("Push: " + data);
-        Node newNode = new Node(data);
-        newNode.setNext(head);
-        head = newNode;
+        Node<T> node = new Node<>(data);
+        node.setNext(head);
+        head = node;
     }
 
     //simple pop function - delete from the head
@@ -22,15 +22,15 @@ public class StackLinkedList<T> {
         if(isEmpty()){
             System.out.println("Stack is Empty!");
             return null;}
-        Node current = head;
+        Node<T> current = head;
         head = head.getNext();
         System.out.println("Pop: " + current.getData());
-        return (T) current.getData();
+        return current.getData();
     }
 
     public void show(){
         System.out.println("Show Method called...");
-        Node current = head;
+        Node<T> current = head;
         while(current != null){
             System.out.println("Data: " + current.getData());
             current = current.getNext();

@@ -47,11 +47,10 @@ public class QueueLinkedList<T> {
         if (isEmpty()){
             System.out.println("Queue is Empty!"); return;
         }
-        Node current = head;
+        Node<T> current = head;
         while(current != null){
             System.out.print(showData(current) + ",");
             current = current.getNext();
         }
-        System.out.println();
     }
 }

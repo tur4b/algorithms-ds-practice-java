@@ -32,23 +32,14 @@ public class BinaryTree<T> {
     }
     // ************************************************
 
-    public List<TreeNode<T>> visitTree(TreeNode<T> node, VisitOrder VisitOrder) {
+    public List<TreeNode<T>> visitTree(VisitOrder visitOrder) {
         final List<TreeNode<T>> list = new ArrayList<>();
-        switch(VisitOrder) {
-            case PREORDER -> visit_preorder(node, list);
-            case INORDER -> visit_inorder(node, list);
-            case POSTORDER -> visit_postorder(node, list);
+        switch(visitOrder) {
+            case PREORDER -> visit_preorder(root, list);
+            case INORDER -> visit_inorder(root, list);
+            case POSTORDER -> visit_postorder(root, list);
         }
         return list;
-    }
-
-    public void print_(TreeNode<T> node) {
-        if(node == null) {
-            return;
-        }
-        print_(node.getLeft());
-        System.out.println(node.getData());
-        print_(node.getRight());
     }
 
     private void visit_preorder(TreeNode<T> node, List<TreeNode<T>> list) {
@@ -88,14 +79,6 @@ public class BinaryTree<T> {
         visit_postorder(node.getLeft(), list);
         visit_postorder(node.getRight(), list);
         list.add(node);
-    }
-
-    public TreeNode<T> getRoot() {
-        return root;
-    }
-
-    public long getSize() {
-        return size;
     }
     
     

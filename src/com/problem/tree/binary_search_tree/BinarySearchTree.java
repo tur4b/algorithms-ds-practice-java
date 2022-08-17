@@ -2,6 +2,8 @@ package com.problem.tree.binary_search_tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 import com.problem.tree.model.VisitOrder;
 
@@ -44,36 +46,53 @@ public class BinarySearchTree<T> {
         return node;
     }
 
-    public TreeNode<T> remove(T data) {
-        return null;
+    public int getDepthOfTree() {
+        throw new UnsupportedOperationException("get depth of tree not implemented yet!");
     }
+
+    public Optional<TreeNode<T>> findByData(T data) {
+        TreeNode<T> current = root;
+        while(current != null) {
+            final Comparable c = (Comparable) current.getData();
+            final int compareNodes = c.compareTo(data);
+
+            if(compareNodes == 0) {
+                return Optional.of(current);
+            }
+            else if(compareNodes > 0) {
+                if(current != null) {
+                    current = current.getLeft();
+                }
+            }
+            else {
+                if(current != null) {
+                    current = current.getRight();
+                }
+            }
+        }
+        return Optional.empty();
+    }
+
+    private TreeNode<T> removeLeafNode() {
+       throw new UnsupportedOperationException("Remove leaf node not implemented yet!");
+    }
+   
     // ************************************************
 
-    public List<TreeNode<T>> visitTree(TreeNode<T> node, VisitOrder VisitOrder) {
+    public List<TreeNode<T>> visitTree(VisitOrder visitOrder) {
         final List<TreeNode<T>> list = new ArrayList<>();
-        switch(VisitOrder) {
-            case PREORDER -> visit_preorder(node, list);
-            case INORDER -> visit_inorder(node, list);
-            case POSTORDER -> visit_postorder(node, list);
+        switch(visitOrder) {
+            case PREORDER -> visit_preorder(root, list);
+            case INORDER -> visit_inorder(root, list);
+            case POSTORDER -> visit_postorder(root, list);
         }
         return list;
     }
 
-    public void print_(TreeNode<T> node) {
-        if(node == null) {
-            return;
-        }
-        print_(node.getLeft());
-        System.out.println(node.getData());
-        print_(node.getRight());
-    }
-
     private void visit_preorder(TreeNode<T> node, List<TreeNode<T>> list) {
+        Objects.requireNonNull(list, "List for storing nodes can't be null!");
         if(node == null) {
             return;
-        }
-        if(list == null) {
-            list = new ArrayList<>();
         }
         // preorder
         list.add(node);
@@ -82,11 +101,9 @@ public class BinarySearchTree<T> {
     }
 
     private void visit_inorder(TreeNode<T> node, List<TreeNode<T>> list) {
+        Objects.requireNonNull(list, "List for storing nodes can't be null!");
         if(node == null) {
             return;
-        }
-        if(list == null) {
-            list = new ArrayList<>();
         }
         // inorder
         visit_inorder(node.getLeft(), list);
@@ -95,11 +112,9 @@ public class BinarySearchTree<T> {
     }
 
     private void visit_postorder(TreeNode<T> node, List<TreeNode<T>> list) {
+        Objects.requireNonNull(list, "List for storing nodes can't be null!");
         if(node == null) {
             return;
-        }
-        if(list == null) {
-            list = new ArrayList<>();
         }
         // postorder
         visit_postorder(node.getLeft(), list);
@@ -107,12 +122,5 @@ public class BinarySearchTree<T> {
         list.add(node);
     }
 
-    public TreeNode<T> getRoot() {
-        return root;
-    }
-
-    public long getSize() {
-        return size;
-    }
     
 }

@@ -1,5 +1,6 @@
 package com.problem.linked_list.linked_list_simple;
 import java.util.Iterator;
+import java.util.Optional;
 
 import com.problem.linked_list.model.Node;
 
@@ -115,7 +116,6 @@ public class LinkedList<T> implements Iterable<Node<T>> {
             deleteFirst();
             return head;
         }
-
         return deleteTarget_(data);
     }
 
@@ -137,17 +137,16 @@ public class LinkedList<T> implements Iterable<Node<T>> {
 
     //correct
     public Node<T> insertAfter(T target, T data){
-        boolean found = false;
         if(isEmpty()){
             System.out.println(data + " not found for insertion!");
             return null;
         }
-        return insertAfter_(target, data, found);
+        return insertAfter_(target, data);
     }
 
-    private Node<T> insertAfter_(T target, T data, boolean found) {
-        Node<T> node = new Node<>(data);
+    private Node<T> insertAfter_(T target, T data) {
         Node<T> current = head;
+        boolean found = false;
 
         while(current != null){
             if(current.getData() == target) {
@@ -158,16 +157,18 @@ public class LinkedList<T> implements Iterable<Node<T>> {
         }
 
         if(found == true) {
+            Node<T> node = new Node<>(data);
             node.setNext(current.getNext());
             current.setNext(node);
             size++;
+            return node;
         }
-        return node;
+
+        return null;
     }
 
     //correct
     public Node<T> insertLast(T data){
-        Node<T> node = new Node<>(data);
         if(isEmpty()){
             return insertFirst(data);
         }
@@ -175,6 +176,7 @@ public class LinkedList<T> implements Iterable<Node<T>> {
         while(current.getNext()!= null){
             current = current.getNext();
         }
+        Node<T> node = new Node<>(data);
         current.setNext(node);
         size++;
         return node;
@@ -187,7 +189,6 @@ public class LinkedList<T> implements Iterable<Node<T>> {
         if(isEmpty()) {
             return null;
         }
-
         return deleteLast_(current, previous);
     }
 
@@ -215,6 +216,20 @@ public class LinkedList<T> implements Iterable<Node<T>> {
             current = current.getNext();
         }
         return false;
+    }
+
+    public Optional<Node<T>> findByData(T data){
+        if(!isEmpty()) {
+            return Optional.empty();
+        }
+        Node<T> current = head;
+        while(current != null){
+            if(current.getData() == data) {
+                return Optional.of(current);
+            }
+            current = current.getNext();
+        }
+        return Optional.empty();
     }
 
     private void displayNode(Node<T> node){

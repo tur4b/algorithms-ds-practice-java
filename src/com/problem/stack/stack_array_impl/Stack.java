@@ -1,6 +1,7 @@
 package com.problem.stack.stack_array_impl;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 //stack implementation with array
 public class Stack<T> {
@@ -16,11 +17,11 @@ public class Stack<T> {
     }
 
     public boolean isEmpty(){
-        return top == -1?true:false;
+        return top == -1 ? true : false;
     }
 
     public boolean isFull(){
-        return (top == (size+1))?true:false;
+        return (top == (size+1)) ? true : false;
     }
 
     public void push(T data){

@@ -31,11 +31,24 @@ public class Main {
         BinarySearchTree<String> t2 = new BinarySearchTree<>();
         t2.insert("+");
 
-        tree.visitTree(tree.getRoot(), VisitOrder.INORDER)
-            .forEach(node -> {
-                System.out.println(node.getData());
-            });
-    
+        // tree.visitTree(VisitOrder.INORDER)
+        //     .forEach(node -> System.out.println(node.getData()));
+
+        BinarySearchTree<Integer> t = new BinarySearchTree<>();
+        t.insert(-10);
+        t.insert(-3);
+        t.insert(0);
+        t.insert(5);
+        t.insert(2);
+        t.insert(3);
+        t.insert(9);
+        t.insert(-4);
+
+        TreeNode<Integer> foundedNode = t.findByData(5)
+            .orElseThrow(() -> new RuntimeException("node not found by data: "));
+
+        System.out.println("foundedNode: " + foundedNode);
+
     }
     
 }

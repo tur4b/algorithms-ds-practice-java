@@ -1,6 +1,7 @@
 package com.problem.tree.binary_tree;
 
-import java.util.ArrayList;
+
+import java.util.HashMap;
 
 import com.problem.tree.binary_search_tree.TreeNode;
 import com.problem.tree.model.TreeNodePosition;
@@ -23,15 +24,10 @@ public class Main {
         TreeNode<String> node3_l = tree.insert(node3, "D", TreeNodePosition.LEFT);
         TreeNode<String> node3_r = tree.insert(node3, "E", TreeNodePosition.RIGHT);
 
-        tree.visitTree(tree.getRoot(), VisitOrder.POSTORDER)
-            .forEach(node -> {
-                System.out.print(node.getData() + " ");
-            });
-    }
-
-    public static void practice() {
-        
+        tree.visitTree(VisitOrder.PREORDER)
+            .forEach(node -> System.out.print(node.getData() + " "));
 
     }
+
 
 }

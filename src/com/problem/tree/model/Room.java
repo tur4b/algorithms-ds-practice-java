@@ -1,7 +1,6 @@
 package com.problem.tree.model;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 
 public class Room implements Comparable<Room> {
@@ -86,7 +85,5 @@ public class Room implements Comparable<Room> {
     public String toString() {
         return "Room [number=" + number + ", area=" + area() + "m2" + "]";
     }
-
-    
     
 }
