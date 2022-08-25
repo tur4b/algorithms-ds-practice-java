@@ -1,11 +1,8 @@
 package com.problem.tree.binary_tree;
 
-
-import java.util.HashMap;
-
 import com.problem.tree.binary_search_tree.TreeNode;
 import com.problem.tree.model.TreeNodePosition;
-import com.problem.tree.model.VisitOrder;
+import com.problem.tree.model.TreeView;
 
 public class Main {
     
@@ -24,7 +21,7 @@ public class Main {
         TreeNode<String> node3_l = tree.insert(node3, "D", TreeNodePosition.LEFT);
         TreeNode<String> node3_r = tree.insert(node3, "E", TreeNodePosition.RIGHT);
 
-        tree.visitTree(VisitOrder.PREORDER)
+        tree.visitTree(TreeView.PREORDER)
             .forEach(node -> System.out.print(node.getData() + " "));
 
     }

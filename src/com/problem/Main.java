@@ -1,13 +1,10 @@
 package com.problem;
 
-import com.problem.linked_list.linked_list_simple.LinkedList;
-import com.problem.linked_list.model.Node;
 import com.problem.stack.delimiter_match.DelimiterChecker;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Iterator;
 
 public class Main {
 
@@ -26,7 +23,7 @@ public class Main {
         return str;
     }
 
-    public void stacckDelimiterFunction(){
+    public void stackDelimiterFunction(){
         boolean answer = true;
         do {
             try {
@@ -49,25 +46,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
-        list.insertInSortedOrderAsc(5);
-        list.insertInSortedOrderAsc(2);
-        list.insertInSortedOrderAsc(1);
-        list.insertInSortedOrderAsc(4);
-        list.insertInSortedOrderAsc(3);
-        list.insertInSortedOrderAsc(7);
-
-        // list.show();
-
-        Iterator<Node<Integer>> iterator = list.iterator();
-
-        while(iterator.hasNext()) {
-            System.out.print(iterator.next().getData() + "->");
-        }
-
-        // for(Node<Integer> node : list) {
-        //     System.out.print(node.getData() + "->");
-        // }
 
     }
 

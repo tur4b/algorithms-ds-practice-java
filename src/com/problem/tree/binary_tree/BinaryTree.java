@@ -5,7 +5,8 @@ import java.util.List;
 
 import com.problem.tree.binary_search_tree.TreeNode;
 import com.problem.tree.model.TreeNodePosition;
-import com.problem.tree.model.VisitOrder;
+import com.problem.tree.model.TreeView;
+
 
 public class BinaryTree<T> {
 
@@ -32,9 +33,9 @@ public class BinaryTree<T> {
     }
     // ************************************************
 
-    public List<TreeNode<T>> visitTree(VisitOrder visitOrder) {
+    public List<TreeNode<T>> visitTree(TreeView treeView) {
         final List<TreeNode<T>> list = new ArrayList<>();
-        switch(visitOrder) {
+        switch(treeView) {
             case PREORDER -> visit_preorder(root, list);
             case INORDER -> visit_inorder(root, list);
             case POSTORDER -> visit_postorder(root, list);

@@ -1,5 +1,5 @@
 package com.problem.tree.model;
 
-public enum VisitOrder {
+public enum TreeView {
     PREORDER, INORDER, POSTORDER
 }
